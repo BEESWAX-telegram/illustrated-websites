@@ -14,7 +14,7 @@ body {
   .container {
     width: 375x;
     display: grid;
-    color: green;
+    
   }
   .heading-section-1 {
     display: grid;
@@ -22,30 +22,33 @@ body {
 }
 main {
   width: 100%;
+  margin: auto;
   background-image: linear-gradient(
       115deg,
       rgba(153, 218, 216, 0.407),
       rgba(150, 193, 192, 0.257)
     ),
     url("bg-hero-desktop.svg");
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
+  display: grid;
+  text-align: center;
+  
+  height: 150vh;
   
 }
 /* This part covers the first box- kinda... Everything from th image size to margins and padding. Too many margins and paddings used chaning one thing will affect another thing. Be careful */
 
 
 #huddle-logo-1 {
-  margin-bottom: 150px;
+  margin-bottom: 110px;
 }
-
+.yet-another-div {
+  display: flex;
+}
 .heading-section-1 h1 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
 }
- .heading-section-1 button {
+ .first-button {
   margin-top: 20px;
   padding: 20px 20px 20px 20px;
   border-radius: 30px;
@@ -53,7 +56,7 @@ main {
   background-color: rgb(223, 0, 130);
   border: none;
  }
- .heading-section-1 button a {
+ .first-button a {
   text-decoration: none;
   color: white;
  }
@@ -67,16 +70,17 @@ main {
   width: 50%; 
   
 }
-.heading-section-2 button {
-  margin-bottom: 70px;
+.second-button {
+  margin-bottom: 50px;
   margin-left: 30%;
   padding: 20px 10px 20px 10px;
   border-radius: 30px;
-  width: 50%;
+  width: 25%;
   background-color: rgb(255, 255, 255);
   border: none;
+  
  }
- .heading-section-2 button a {
+ .second-button a {
   text-decoration: none;
   color: black;
   font-family: "Open Sans", sans-serif;
@@ -98,7 +102,7 @@ main {
 
 }
 .first-section {
-  display: flex;
+  display: grid;
   margin: 30px 10px;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 30px 30px;
@@ -123,7 +127,7 @@ main {
 }
 
 .second-section {
-  display: flex;
+  display: grid;
   margin: 30px 10px;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 30px 30px;
@@ -148,7 +152,7 @@ main {
     
 }
 .third-section {
-  display: flex;
+  display: grid;
   margin: 30px 10px;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 30px 30px;
@@ -197,5 +201,5 @@ main {
  }
 footer {
   background-color: rgb(22, 63, 66);
-  display: flex;
+  display: grid;
 }
